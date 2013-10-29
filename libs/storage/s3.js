@@ -29,7 +29,7 @@ function S3Storage(config) {
     this.config.baseDir = this.config.baseDir.substring(1);
   }
   DEBUG && debug('create s3 storage:', this.config);
-  this.s3Client = knox.createClient({key: this.config.key, secret: this.config.secret, bucket: this.config.bucket});
+  this.s3Client = knox.createClient(this.config);
 }
 util.inherits(S3Storage, storage.Storage);
 
