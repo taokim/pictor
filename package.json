@@ -46,6 +46,5 @@
   },
   "directories": {
     "lib": "./libs"
-  },
-  "main": "./libs/pictor"
+  }
 }
